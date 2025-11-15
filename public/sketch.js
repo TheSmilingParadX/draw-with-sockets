@@ -4,7 +4,8 @@ function setup() {
     createCanvas(600, 400);
     background(50);
 
-    socket = io.connect('https://127.0.0.1:3000');
+    // socket = io.connect('https://127.0.0.1:3000');
+    socket = io();
     socket.on('mouse', 
         function(data) {
             console.log("Got: " + data.x + " " + data.y);
