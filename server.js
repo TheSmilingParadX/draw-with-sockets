@@ -9,7 +9,7 @@ console.log("My server is running!");
 var socket = require('socket.io');
 var io = socket(server);
 
-io.sockets.on('conneciton', newConnection);
+io.sockets.on('connection', newConnection);
 
 function newConnection(socket) {
     console.log('new connection: ' + socket.id);
